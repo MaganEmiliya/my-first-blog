@@ -1,9 +1,13 @@
 {% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" herf="{static 'css/bootstrap.min.css'%}">
-<link rel="stylesheet" herf="{static 'css/bootstrap-theme.css'%}">
-<link rel="stylesheet" herf="{static 'css/style.css'%}">
+
+<link rel="stylesheet" herf="{% static 'css/bootstrap.min.css'%}">
+<link rel="stylesheet" herf="{% static 'css/bootstrap-theme.css'%}">
+<link rel="stylesheet" herf="{% static 'css/style.css'%}">
+
+
+
 <head>
 	<meta charset="UTF-8">
 	<title>Результаты тренировок</title>
@@ -138,8 +142,8 @@
 
 
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="js/npm.js"></script>
-<script src="js/bootstrap.js"></script>
+		<script src="{% static 'js/npm.js'%}"></script>
+<script src="{% static 'js/bootstrap.js'%}"></script>
 
 
 </body>
